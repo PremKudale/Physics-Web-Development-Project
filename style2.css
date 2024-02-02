@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    height: 100vh;
+}
+
+.logo{
+    width:80px;
+    margin-left: 20px;
+    
+}
+
+#sitename{
+    font-family: 'Mooli', sans-serif;
+    font-size: x-large;
+    color: #fff;
+    
+    text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;  
+}
+#sitename a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 3px 20px #7df395,
+    -2px 1px 30px #7df395; 
+    transition: font-size 1s , font-weight 1s, color 1s;
+}
+#sitename a:hover{
+    text-decoration: none;
+    /* transition-duration: 1s; */
+     transition-timing-function: ease-in; 
+    font-weight:bolder;
+    font-size: 30px;
+    color: #009688;
+    text-shadow: 3px 3px 20px #009688;  
+}
+
+
+.navbar{
+    top: 0;
+    left: 0%;
+    display: flex;
+    height: 12%;
+    justify-content: space-between;
+    width: 100%;  
+    align-items: center;
+}
+
+#p1{
+    margin-top: 20px;
+}
+.navbar ul{
+    margin-right: 10px;
+}
+
+.navbar ul li{
+    text-align: center;
+    position: relative;
+    display: inline;
+    list-style: none;
+    padding: 5px 5px;
+    margin: 10px;
+    
+}
+.navbar ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: larger;
+   font-weight: 800;
+   padding: 5px 5px;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg5.jpg);
+    background-position: center;
+    /* background-repeat: repeat-y; */
+    background-size: cover;
+}
+
+#sitename{
+    color: white;
+}
+
+.logo{
+    border-radius: 75%;
+    padding-top: 5px;
+}
+/* .one{
+    margin-left: 8px ;
+    margin-right: 8px;
+    padding-left:8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+} */
+.row{
+    display:flex;
+    height: 88%;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 8px;
+}
+.col{
+    flex-basis: 50%;
+}
+.row .col h1{
+    font-size: 48px;
+}
+#laser{
+    background-image: url(optics.PNG);
+}
+#quantum{
+    background-image: url(quantum.png);
+}
+#heat{
+    background-image: url(thermodynamics.jpg);
+}
+#magnet{
+    background-image: url(electromag.png);
+}
+#cardcon{
+    margin-left: 20px;
+}
+.card{
+    width:250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;   
+}
+.card h4{
+    transition: transform 1s;
+}
+
+.col h4{
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin-top: 80%;
+    padding-top: 20%;
+    text-decoration: none;
+}
+
+.col  a{
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+
+.col h4 a:visited{
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+}
+
+.card:hover{
+     transform: translateY(-10px); 
+     font-size: 20px;
+     opacity: 0.9;
+     
+}
+.card:hover h4{
+    transform: translateY(-10%);
+}
+/* Second page for all the contents */
+
+.pagetwo{
+    height: 100vh;
+}
+.pagetwo h1{
+    text-align: center;
+    font-size: 40px;
+    /*  margin-top: 30px; */
+    padding-top: 25px;
+} 
+.pagetwo h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pagetwo .topiccontainer{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 65px;
+    margin-right: 20px;
+    padding-left: 60px;
+    flex-wrap: wrap;
+}
+.pagetwo .content{
+    width:250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 20px;
+    background-position: center;
+    background-size: cover;
+    transition: 1s; 
+    justify-content: space-between;  
+}
+.pagetwo .content h4{
+    transition: transform 1s;
+}
+.pagetwo #current{
+    background-image: url(current.jpeg);
+}
+#kinematics{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(kinematics.png);
+}
+#gravity{
+    background-image: url(gravity.jpg);
+}
+#modern{
+    background-image: url(modern.jpg);
+}
+#general{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/271083123/original/8574a3e16ab1aa5013a4b936d62e3016167565a2/assist-in-physics-labs-and-problems.jpeg);
+}
+#motion{
+    background-image: url(motion.jpg);
+}
+#matter{
+    background-image: url(matter.jpeg);
+}
+#statics{
+    background-image: url(electrostatics.jpg);
+}
+
+.content h4{
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin-top: 80%;
+    padding-top: 20%;
+    text-decoration: none;
+    color: white;
+}
+.content:hover{
+    transform: translateY(-10px); 
+    font-size: 20px;
+    opacity: 0.9; 
+}
+
+
+.content:hover h4{
+    transform: translateY(-10%);
+}

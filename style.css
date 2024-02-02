@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    height: 100vh;
+}
+
+.logo{
+    width:80px;
+    margin-left: 20px;
+    
+}
+
+#sitename{
+    font-family: 'Mooli', sans-serif;
+    font-size: x-large;
+    color: #fff;
+     font-weight:bold ;
+}
+#sitename a{
+    text-decoration: none;
+    color: #111; 
+    transition: font-size 1s , font-weight 1s, color 1s;
+}
+#sitename a:hover{
+    text-decoration: none;
+    /* transition-duration: 1s; */
+     transition-timing-function: ease-in; 
+    font-weight:bolder;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 3px 3px 20px #009688;  
+}
+
+.navbar{
+    background: rgba(76, 175, 80,1);
+    top: 0;
+    left: 0%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+}
+#p1{
+    margin-top: 20px;
+}
+.navbar ul{
+    margin-right: 10px;
+}
+
+.navbar ul li{
+    text-align: center;
+    
+    display: inline;
+    list-style: none;
+    padding: 5px 5px;
+    
+}
+.navbar ul li a{
+   text-decoration: none;
+   color: rgb(2, 22, 15);
+   font-size: larger;
+   font-weight: 800;
+   padding: 5px 5px;
+   transition: 1s;
+}
+
+.navbar ul li a:hover{
+    font-size: 25px;
+    color: #848484;
+}
+
+.one{
+    
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.one .hello {
+    border-bottom: 5px solid #09ab49 ;
+    border-top: 5px solid #09ab49 ; 
+    font-size: 50px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.one h2{
+    text-decoration: underline solid  red;
+    text-underline-offset: 5px;
+    color: #11788f;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500px;
+}
+
+.one h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.one ul{
+    margin-left: 10px;
+}
+
+.image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+    border: 2px solid black;
+    margin-top: 20px;
+    
+}
+
+#tir{
+    width:35%;
+}
+
+#struct{
+    width:30%;
+}
+
+#fiberoptics{
+    width: 30%;
+}
+.one p{
+    margin-top: 5px;
+    font-weight: 200;
+    font-size:18px ;
+}
+
+#footer1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#topic{
+    margin-top: 20px;
+}
+
+.struct_fiberoptics{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.struct_fiberoptics li .type_strct{
+    font-size: 15px;
+    
+}
+footer{
+   background-color: #111;
+   margin-left: -20px;
+   width: 100%;
+   margin-top: 20px;
+   position: absolute;
+}
+.footercontainer{
+    
+    color: white;
+    padding: 40px 30px 20px;
+    width: 100%;
+}
+
+.footern{
+    text-align: center;
+}
+
+.icons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: white;
+    margin:10;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+

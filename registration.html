@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>Registration</title>
+<style>
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg5.jpg);
+    background-size: cover;
+    font-family: sans-serif;}
+.logo{
+    width:80px;
+    margin-left: 20px;
+    
+}
+
+#sitename{
+    font-family: 'Mooli', sans-serif;
+    font-size: x-large;
+    color: #fff;
+    
+    text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;  
+}
+#sitename a{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 3px 3px 20px #7df395,
+    -2px 1px 30px #7df395; 
+    transition: font-size 1s , font-weight 1s, color 1s;
+}
+#sitename a:hover{
+    text-decoration: none;
+    /* transition-duration: 1s; */
+     transition-timing-function: ease-in; 
+    font-weight:bolder;
+    font-size: 30px;
+    color: #009688;
+    text-shadow: 3px 3px 20px #009688;  
+}
+
+
+.navbar{
+    top: 0;
+    left: 0%;
+    display: flex;
+    height: 12%;
+    justify-content: space-between;
+    width: 100%;  
+    align-items: center;
+}
+
+#p1{
+    margin-top: 20px;
+}
+.navbar ul{
+    margin-right: 10px;
+}
+
+.navbar ul li{
+    text-align: center;
+    position: relative;
+    display: inline;
+    list-style: none;
+    padding: 5px 5px;
+    margin: 10px;
+    
+}
+.navbar ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: larger;
+   font-weight: 400;
+   padding: 5px 5px;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.logo{
+    border-radius: 75%;
+    padding-top: 5px;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background-color: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;}
+.loginbox p{
+    margin: 0;
+    padding: 0;}
+.loginbox input{               
+    width: 100%;
+    margin-bottom: 20px;}
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;}
+.loginbox .button-form{
+    display: flex;
+    margin-top: 20px;}
+.loginbox #register{
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid #fff;}
+.loginbox #register:hover{
+    background: #f58b01;
+    color: #fff;
+    width: auto;
+    border-radius: 10px;
+    border-width: 5px;
+    
+    text-align: center;}
+    #login{
+        margin-top: 10px;
+    }
+    #log{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <img src="logo.jpg" class="logo" >
+        <p id="sitename"><a href="#">PHYSICS DEVS - World Of Physics Made Easy</a></p>
+        <ul>
+            <li><a class="bar" href="index.html">Home</a></li>
+            <li><a class="bar" href="about.html">About Us</a></li>
+            <li><a class="bar" href="#contact">Contact Us</a></li>
+            <li><a class="bar" href="registration.html">Sign In</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="loginbox">
+        <img src="PencilAvatar.png" class="avatar">
+        <h1>Create User</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password">
+            <div class="button-form">
+                <a id="register" href="index.html">Register</a>
+            </div>
+            <div id="login">
+                Already have an account?
+                <a  href="login.html" id="log">Log in</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
